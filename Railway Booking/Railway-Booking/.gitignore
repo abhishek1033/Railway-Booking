@@ -1,6 +1,7 @@
 .settings
 *.project
 target
+.target
 .classpath
 .project
 .apt_generated
