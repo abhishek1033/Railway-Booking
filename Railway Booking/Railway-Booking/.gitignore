@@ -1,0 +1,9 @@
+.settings
+*.project
+target
+.classpath
+.project
+.apt_generated
+.factorypath
+ADMIN
+/.metadata/
