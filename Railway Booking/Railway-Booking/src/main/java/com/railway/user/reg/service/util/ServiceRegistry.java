@@ -5,12 +5,21 @@ import org.springframework.stereotype.Component;
 
 import com.railway.user.reg.service.service.UserDetailsService;
 
-import lombok.Getter;
-
 @Component
-@Getter
 public class ServiceRegistry 
 {
 	@Autowired
 	private UserDetailsService userDetailsService;
+
+	public UserDetailsService getUserDetailsService() {
+		return userDetailsService;
+	}
+
+	public void setUserDetailsService(UserDetailsService userDetailsService) {
+		this.userDetailsService = userDetailsService;
+	}
+	
+	
+	
+	
 }

@@ -1,13 +1,13 @@
 package com.railway.user.reg.service.controler;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
 
+import com.railway.user.reg.service.util.ApplicationUtils;
 import com.railway.user.reg.service.util.RepositoryRegistry;
 import com.railway.user.reg.service.util.ServiceRegistry;
 
-import lombok.Getter;
 
-@Getter
 public class BaseController {
 	
 	@Autowired
@@ -15,4 +15,11 @@ public class BaseController {
 	
 	@Autowired
 	RepositoryRegistry repositoryRegistry;
+	
+	@Autowired
+	ApplicationUtils applicationUtils;
+	
+	@Autowired
+	MessageSource messageSource;
+	
 }
